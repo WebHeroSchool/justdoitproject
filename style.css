@@ -54,7 +54,6 @@ body {
   margin: auto;
   width: 82%;
   font-family: "montserrat500";
-
 }
 
 header {
@@ -65,6 +64,10 @@ header {
 nav {
   float: right;
   clear: both;
+}
+
+.menu {
+  font-family: gilroy;
 }
 
 .menu__item {
