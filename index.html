@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
+  <header class="upper">
     <nav class="menu">
       <a class="menu__item">Мои навыки</a>
       <a class="menu__item">Оставить заявку</a>
@@ -19,59 +19,59 @@
     <div class="page">Разработка сайтов, игр и приложений
     <span>Помогаю воплощать мечты в реальность</span></div>
   </header>
-  <main>
-    <section id="reasons">
-      <h1>Почему вам стоит обратиться ко мне</h1>
-      <ul>
-        <li>
-          <h1>Индивидуальный подход</h1>
-          <h3>Каждый клиент для меня особенный. Я тщательно изучаю что ему необходимо, прежде, чем приступить к работе.</h2>
+  <main class="wrapper">
+    <section class="reason">
+      <h1 class="reason__900">Почему вам стоит обратиться ко мне</h1>
+      <ul class="reason__blocks">
+        <li class="reason__fblock">
+          <h1 class="reason__900">Индивидуальный подход</h1>
+          <p class="reason__500">Каждый клиент для меня особенный. Я тщательно изучаю что ему необходимо, прежде, чем приступить к работе.</p>
         </li>
-        <li>
-          <h1>Разумные цены</h1>
-          <h3>Я предлагаю выгодные цены за безупречное выполнение работы и соблюдение сроков.</h2>
+        <li class="reason__sblock">
+          <h1 class="reason__900"Разумные цены</h1>
+          <p class="reason__500">Я предлагаю выгодные цены за безупречное выполнение работы и соблюдение сроков.</p>
         </li>
-        <li>
-          <h1>Отличный результат!</h1>
-          <h3>Я внимательно работаю над каждым проектом. Я очень люблю свою работу, поэтому вас обрадует результат проделанной работы.</h2>
+        <li class="reason__tblock">
+          <h1 class="reason__900">Отличный результат!</h1>
+          <p class="reason__500">Я внимательно работаю над каждым проектом. Я очень люблю свою работу, поэтому вас обрадует результат проделанной работы.</p>
         </li>
       </ul>
-      <button type="button" name="button">Получить консультацию</button>
+      <button type="reas__button" name="button">Получить консультацию</button>
     </section>
     <section class="skills">
-      <h1>Что я могу</h1>
+      <h1 class="skills__900">Что я могу</h1>
       <div class="left">
-        <h2>Я умею писать валидный и семмантически верный код для вашего сайта или приложения</h2>
-        <h3>Ваш сайт и приложение будут верно работать, благодаря моей верстке</h3>
+        <h2 class="skills__600">Я умею писать валидный и семмантически верный код для вашего сайта или приложения</h2>
+        <p class="skills__500">Ваш сайт и приложение будут верно работать, благодаря моей верстке</p>
       </div>
       <div class="right">
-        <h2>Я умею создавать игры и анимации с помощью JavaScript</h2>
-        <h3>Я свободно владею языком JavaScript и могу “оживить” ваш сайт и приложение</h3>
+        <h2 class="skills__600">Я умею создавать игры и анимации с помощью JavaScript</h2>
+        <p class="skills__500">Я свободно владею языком JavaScript и могу “оживить” ваш сайт и приложение</p>
       </div>
       <div class="left">
-        <h2>Я умею создавать приложения с помощью React</h2>
-        <h3>Благодаря моим навыкам, ваш сайт и приложение будут максимально удобными в использовании</h3>
+        <h2 class="skills__600">Я умею создавать приложения с помощью React</h2>
+        <p class="skills__500">Благодаря моим навыкам, ваш сайт и приложение будут максимально удобными в использовании</p>
       </div>
     </section>
     <section class="question">
-      <h1>Есть вопросы?</h1>
-      <span>Заполните, пожалуйста, эту форму и я обязательно свяжусь с вами</span>
+      <h1 class="question__900">Есть вопросы?</h1>
+      <span class="question__600">Заполните, пожалуйста, эту форму и я обязательно свяжусь с вами</span>
       <form method="post" name="form">
         <input name="name" type="text" placeholder="Имя и фамилия" />
         <input name="number" type="text" placeholder="Номер телефона" />
         <input name="email" type="text" placeholder="e-mail" />
         <input type="submit" value="Отправить" />
-        <button type="button" name="button">Отправить</button>
-      </ul>
+        <!-- <button type="button" name="button">Отправить</button> -->
+      </form>
     </section>
   </main>
   <footer class="botbar">
-    <p class="">Меня можно найти в социальных сетях:</p>
-    <aside>
-      <a href="#">link</a>
-      <a href="#">inst</a>
-      <a href="#">face</a>
+    <p class="botbar_w">Меня можно найти в социальных сетях:</p>
+    <aside class="links">
+      <a class="links__l" href="#">link</a>
+      <a class="links__i" href="#">inst</a>
+      <a class="links__f" href="#">face</a>
     </aside>
-    <p class="">&#169; 2020 Web Hero School</p>
+    <p class="botbar__cop">&#169; 2020 Web Hero School</p>
   </footer>
 </body>
