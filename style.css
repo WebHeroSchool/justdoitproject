@@ -66,6 +66,18 @@ nav {
   clear: both;
 }
 
+input {
+  font-family: montserrat600;
+}
+
+button {
+  font-family: montserrat800;
+}
+
+.button2 {
+  font-family: montserrat900;
+}
+
 .menu {
   font-family: gilroy;
 }
