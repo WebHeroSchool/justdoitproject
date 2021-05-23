@@ -444,6 +444,105 @@ button {
   }
 }
 @media (max-width: 1055px) {
+  .skills {
+    margin-bottom: 35px;
+  }
+  .skills div {
+    height: 150px;
+    margin-bottom: 0;
+    background-size: 140px 140px;
+  }
+  .skills h2 {
+    font: 600 20px/25px montserrat600, Helvetica;
+  }
+  .skills p {
+    font: 500 18px/21px montserrat500, Helvetica;
+  }
+  .left1,
+  .left2 {
+    padding: 6px 0 0 170px;
+  }
+  .skills .right {
+    margin-bottom: 15px;
+    padding: 25px 170px 0 0;
+  }
+}
+@media (max-width: 988px) {
+  .page__text {
+    margin-right: 5%;
+  }
+  .reason {
+    padding: 45px 0 40px 0;
+  }
+  .reason__blocks {
+    margin-bottom: 30px;
+
+  }
+  .reason__block {
+    margin-bottom: 35px;
+    padding: 90px 0 0;
+  }
+  .sblock {
+    order: 2;
+  }
+  .tblock {
+    order: 3;
+  }
+  .skills {
+    padding-top: 35px;
+  }
+  .skills h1 {
+    margin-bottom: 35px;
+  }
+}
+@media (min-width: 769px) {
+
+  .hmenu {
+    display: none;
+  } */
+
+  .question {
+    padding-top: 40px;
+  }
+  .question h1 {
+    margin-bottom: 25px;
+  }
+  .question h2 {
+    margin-bottom: 25px;
+    padding-top: 190px;
+    background-size: 42%;
+  }
+  .form {
+    margin-bottom: 46px;
+  }
+  .formline {
+    height: 60px;
+  }
+  .botbar {
+    padding-top: 46px;
+  }
+  .links {
+    margin-bottom: 50px;
+  }
+  .botbar__cop {
+    padding-bottom: 25px;
+  }
+}
+/* Разобраться почему не смещается sblock */
+@media (max-width: 1220px) {
+  .reason__block {
+    padding-bottom: 10px;
+  }
+  .skills {
+    margin: 0 0 50px 0;
+  }
+  .skills div {
+    width: 100%;
+    margin-bottom: 10px;
+    background-size: 175px 175px;
+  }
+}
+@media (max-width: 1055px) {
   .reason {
     padding: 50px 0;
   }
@@ -660,6 +759,129 @@ button {
   list-style: none;
   /* visibility: hidden; */
   opacity: 0;
+}
+.hmenu__item {
+  display: block;
+  padding: 13px 17px 12px 3px;
+  font: 500 30px/35px "Roboto", arial, helvetica, sans-serif;
+  text-decoration: none;
+  color: #333;
+  transition-duration: .25s;
+}
+.hmenu__item:hover {
+  background-color: #CFD8DC;
+}
+/* @media (max-width: 768px) {
+  body {
+    margin: 0;
+  }
+  .menu {
+    margin: 0;
+    padding: 18px 0 36px 0;
+    height: 0;
+    border: 0;
+  }
+  .menu__item {
+    display: none;
+  }
+  button {
+    width: 70px;
+    height: 19px;
+    margin: 0;
+    position: relative;
+    top: 0;
+    right: 22.5%;
+    font: 800 8px/10px montserrat800, helvetica;
+  }
+  .page {
+    padding-top: 25px;
+    margin-right: 9%;
+  }
+  .page__text {
+    display: inline-block;
+    padding-top: 8%;
+    margin-right: 9%;
+    width: 185px;
+    font: 900 20px/24px montserrat900, helvetica;
+  }
+  .page__span {
+    font: 700 16px/19.5px montserrat700, helvetica;
+  }
+
+
+
+
+
+
+
+} */
+/* .hmenu {
+  position: relative;
+  top: -20px;
+  right: 9%;
+} */
+#hmenu__toggle {
+  opacity: 0;
+}
+#hmenu__toggle:checked ~ .hmenu__btn > span {
+  transform: rotate(45deg);
+}
+#hmenu__toggle:checked ~ .hmenu__btn > span::before {
+  top: 0;
+  transform: rotate(0);
+}
+#hmenu__toggle:checked ~ .hmenu__btn > span::after {
+  top: 0;
+  transform: rotate(90deg);
+}
+#hmenu__toggle:checked ~ .hmenu__box {
+  visibility: visible;
+  left: 0;
+}
+.hmenu__btn {
+  position: relative;
+  top: 0px;
+  right: 0px;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+}
+.hmenu__btn > span,
+.hmenu__btn > span::before,
+.hmenu__btn > span::after {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: #0056EC;
+  transition-duration: .25s;
+}
+.hmenu__btn > span::before {
+  top: -7px;
+  content: '';
+}
+.hmenu__btn > span::after {
+  top: 7px;
+  content: '';
+}
+.hmenu__box {
+  position: fixed;
+    top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #ECEFF1;
+  box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+  list-style: none;
+  visibility: hidden;
 }
 .hmenu__item {
   display: block;
