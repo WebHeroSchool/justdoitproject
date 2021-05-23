@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <!-- <html lang="ru"> -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Project 1</title>
@@ -16,7 +15,21 @@
     <nav class="menu">
       <a class="menu__item">Мои навыки</a>
       <a class="menu__item">Оставить заявку</a>
-      <button type="button" name="call">Позвонить</button>
+      <button class="call" type="button" name="call">Позвонить</button>
+    </nav>
+    <div class="hmenu">
+      <input id="hmenu__toggle" type="checkbox" />
+      <label class="hmenu__btn" for="hmenu__toggle">
+        <span></span>
+      </label>
+      <ul class="hmenu__box">
+        <li><a class="hmenu__item" href="#">start</a></li>
+        <li><a class="hmenu__item" href="#">services</a></li>
+        <li><a class="hmenu__item" href="#">about</a></li>
+        <li><a class="hmenu__item" href="#">blog</a></li>
+        <li><a class="hmenu__item" href="#">contact us</a></li>
+      </ul>
+    </div>
     </nav>
     <div class="page">
       <div class="page__text">Разработка сайтов, игр и приложений
@@ -32,7 +45,7 @@
           <p class="reason__500">Каждый клиент <br />для меня особенный.<br /> Я тщательно изучаю<span>что ему необходимо</span>, прежде, чем приступить к работе.</p>
         </li>
         <li class="reason__block sblock">
-          <h1 class="reason__900">Разумные цены</h1>
+          <h1 class="reason__900">Разумные &nbsp;цены</h1>
           <p class="reason__500">Я предлагаю выгодные цены за безупречное выполнение работы и соблюдение сроков.</p>
         </li>
         <li class="reason__block tblock">
@@ -49,7 +62,7 @@
         <p class="skills__500">Ваш сайт и приложение будут<span> верно работать, благодаря моей верстке</span></p>
       </div>
       <div class="right">
-        <h2 class="skills__600">Я умею создавать игры<span>и анимации с помощью JavaScript</span></h2>
+        <h2 class="skills__600">Я умею создавать игры&nbsp<span>и анимации с помощью JavaScript</span></h2>
         <p class="skills__500">Я свободно владею языком JavaScript
           <span>и могу “оживить” ваш сайт и приложение</span></p>
       </div>
@@ -61,7 +74,7 @@
     <section class="question">
       <h1 class="question__900">Есть вопросы?</h1>
       <h2 class="question__600">Заполните, пожалуйста, эту форму и я обязательно свяжусь с вами</h2>
-      <form method="post" name="form">
+      <form class="form" method="post" name="form">
         <input class="formline" name="name" type="text" placeholder="Имя и фамилия" />
         <input class="formline" name="number" type="text" placeholder="Номер телефона" />
         <input class="formline" name="email" type="text" placeholder="e-mail" />
