@@ -546,11 +546,11 @@ button {
 
 
 } */
-.hmenu {
+/* .hmenu {
   position: relative;
   top: -20px;
   right: 9%;
-}
+} */
 #hmenu__toggle {
   opacity: 0;
 }
