@@ -5,7 +5,7 @@
 
 body {
   max-width: 1440px;
-  margin: 0 auto;
+  margin: auto;
 }
 
 
@@ -57,6 +57,86 @@ button {
   font: 800 20px/26px gilroy;
   color: #585858;
 }
+
+.hmenu {
+  margin-right: ;
+}
+#hmenu__toggle {
+  opacity: 0;
+}
+#hmenu__toggle:checked ~ .hmenu__btn > span {
+  transform: rotate(45deg);
+}
+#hmenu__toggle:checked ~ .hmenu__btn > span::before {
+  top: 0;
+  transform: rotate(0);
+}
+#hmenu__toggle:checked ~ .hmenu__btn > span::after {
+  top: 0;
+  transform: rotate(90deg);
+}
+#hmenu__toggle:checked ~ .hmenu__box {
+  opacity: 1;
+  left: 0;
+}
+.hmenu__btn {
+  position: relative;
+  top: -10px;
+  right: -10px;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+}
+.hmenu__btn > span,
+.hmenu__btn > span::before,
+.hmenu__btn > span::after {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: #0056EC;
+  transition-duration: .25s;
+}
+.hmenu__btn > span::before {
+  top: -7px;
+  content: '';
+}
+.hmenu__btn > span::after {
+  top: 7px;
+  content: '';
+}
+.hmenu__box {
+  position: fixed;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #ECEFF1;
+  box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+  list-style: none;
+  /* visibility: hidden; */
+  opacity: 0;
+}
+.hmenu__item {
+  display: block;
+  padding: 13px 17px 12px 3px;
+  font: 500 30px/35px "Roboto", arial, helvetica, sans-serif;
+  text-decoration: none;
+  color: #333;
+  transition-duration: .25s;
+}
+.hmenu__item:hover {
+  background-color: #CFD8DC;
+}
+
 
 .page {
   display: flex;
@@ -444,6 +524,12 @@ button {
   }
 }
 @media (max-width: 1055px) {
+  body {
+    width: 100%;
+    margin: 0;
+    display: flex;
+    flex-flow: column;
+  }
   .reason {
     padding: 50px 0;
   }
@@ -484,7 +570,8 @@ button {
     padding: 25px 170px 0 0;
   }
 }
-@media (max-width: 988px) {
+/* ПРОВЕИРИТЬ НУЖНО ЛИ ЭТО ВООБЩЕ */
+/* @media (max-width: 988px) {
   .page__text {
     margin-right: 5%;
   }
@@ -511,20 +598,22 @@ button {
   .skills h1 {
     margin-bottom: 35px;
   }
-}
-@media (min-width: 769px) {
-
+} */
+@media (min-width: 801px) {
   .hmenu {
     display: none;
   }
 }
-@media (max-width: 768px) {
-  body {
-    width: 100%;
-    margin: 0;
-  }
+@media (max-width: 800px) {
+
   button {
     margin-right: calc(5.9% + 2px);
+    width: 70px;
+    height: 19px;
+    position: relative;
+    top: 0;
+    right: 0;
+    font: 800 8px/10px montserrat800, helvetica;
   }
   .menu {
     padding: 30px 0 27px 0;
@@ -543,132 +632,4 @@ button {
     width: 200px;
     margin-right: calc(9.3% + 2px);
   }
-}
-@media (max-width: 480px) {
-  button {
-    width: 70px;
-    height: 19px;
-    position: relative;
-    top: 0;
-    right: 0;
-    font: 800 8px/10px montserrat800, helvetica;
-  }
-}
-  /* .menu {
-    margin: 0;
-    padding: 18px 0 36px 0;
-    height: 0;
-    border: 0;
-  }
-  .menu__item {
-    display: none;
-  }
-  button {
-    width: 70px;
-    height: 19px;
-    margin: 0;
-    position: relative;
-    top: 0;
-    right: 22.5%;
-    font: 800 8px/10px montserrat800, helvetica;
-  }
-  .page {
-    padding-top: 25px;
-    margin-right: 9%;
-  }
-  .page__text {
-    display: inline-block;
-    padding-top: 8%;
-    margin-right: 9%;
-    width: 185px;
-    font: 900 20px/24px montserrat900, helvetica;
-  }
-  .page__span {
-    font: 700 16px/19.5px montserrat700, helvetica;
-  }
-
-
-
-
-
-
-
-} */
-.hmenu {
-  margin-right: ;
-}
-#hmenu__toggle {
-  opacity: 0;
-}
-#hmenu__toggle:checked ~ .hmenu__btn > span {
-  transform: rotate(45deg);
-}
-#hmenu__toggle:checked ~ .hmenu__btn > span::before {
-  top: 0;
-  transform: rotate(0);
-}
-#hmenu__toggle:checked ~ .hmenu__btn > span::after {
-  top: 0;
-  transform: rotate(90deg);
-}
-#hmenu__toggle:checked ~ .hmenu__box {
-  opacity: 1;
-  left: 0;
-}
-.hmenu__btn {
-  position: relative;
-  top: 0px;
-  right: 0px;
-  z-index: 1;
-  display: flex;
-  align-items: center;
-  width: 25px;
-  height: 25px;
-  cursor: pointer;
-}
-.hmenu__btn > span,
-.hmenu__btn > span::before,
-.hmenu__btn > span::after {
-  position: absolute;
-  display: block;
-  width: 100%;
-  height: 3px;
-  background-color: #0056EC;
-  transition-duration: .25s;
-}
-.hmenu__btn > span::before {
-  top: -7px;
-  content: '';
-}
-.hmenu__btn > span::after {
-  top: 7px;
-  content: '';
-}
-.hmenu__box {
-  position: fixed;
-  top: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  padding: 0;
-  background-color: #ECEFF1;
-  box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
-  list-style: none;
-  /* visibility: hidden; */
-  opacity: 0;
-}
-.hmenu__item {
-  display: block;
-  padding: 13px 17px 12px 3px;
-  font: 500 30px/35px "Roboto", arial, helvetica, sans-serif;
-  text-decoration: none;
-  color: #333;
-  transition-duration: .25s;
-}
-.hmenu__item:hover {
-  background-color: #CFD8DC;
 }
