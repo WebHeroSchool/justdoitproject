@@ -1,21 +1,15 @@
 * {
   box-sizing: border-box;
 }
-/* НУЖНО ИСПРАВИТЬ!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!1 */
 
-body {
+.upper,
+.wrapper,
+.botbar {
   max-width: 1440px;
   margin: auto;
 }
 a {
   text-decoration: none;
-}
-
-
-@media (max-width: 1800px) {
-  body {
-    margin: 0 10%;
-  }
 }
 
 h1,
@@ -199,7 +193,7 @@ button {
   text-align: center;
 }
 
-.reason__500 {
+.reason__me {
   width: 328px;
   height: 120px;
   margin: auto;
@@ -219,7 +213,7 @@ button {
 }
 
 
-.fblock .reason__500 {
+.fblock .reason__me {
   padding: 2px 6px 0 0;
 }
 
@@ -232,7 +226,7 @@ button {
   margin-bottom: 28px;
 }
 
-.sblock .reason__500 {
+.sblock .reason__me {
   padding-left: 8px;
 }
 
@@ -246,7 +240,7 @@ button {
   padding-right: 4px;
 }
 
-.tblock .reason__500 {
+.tblock .reason__me {
   width: 350px;
   padding: 2px 9px 0 0;
 }
@@ -420,8 +414,15 @@ button {
 .botbar__cop {
   padding-bottom: 40px;
 }
+}
 
-@media (max-width: 1567px) {
+@media (max-width: 1440px) {
+  body {
+    max-width: none;
+    margin: 0;
+  }
+}
+@media (max-width: 1237px) {
   .reason__blocks {
     margin-bottom: 70px;
   }
@@ -438,12 +439,6 @@ button {
     order: 2;
   }
 
-}
-
-@media (max-width: 1400px) {
-  body {
-    margin: 0 10%;
-  }
   button {
     width: 170px;
     height: 47px;
@@ -512,10 +507,10 @@ button {
   .botbar__cop {
     padding-bottom: 25px;
   }
+
 }
 @media (max-width: 1100px) {
   body {
-    margin: 0 5%;
     display: block;
   }
   .reason {
@@ -533,20 +528,13 @@ button {
     margin-bottom: 0;
     flex: 1 1 300px;
   }
-  .sblock {
-    order: 2;
-  }
-  .tblock {
-    order: 3;
-    width: auto;
-  }
 
-  .reason__500 {
+  .reason__me {
     width: 70%;
     height: auto;
     display: inline-block;
   }
-  .tblock .reason__500 {
+  .tblock .reason__me {
     width: 600px;
   }
   .reason__500 p {
@@ -557,9 +545,17 @@ button {
     margin: 0 3%;
   }
 }
+
 @media (max-width: 880px){
   body {
     margin: 0 1%;
+  }
+  .sblock {
+    order: 2;
+  }
+  .tblock {
+    order: 3;
+    width: auto;
   }
 }
 @media (min-width: 807px) {
@@ -610,7 +606,7 @@ button {
   .reason__blocks {
     display: block;
   }
-  .tblock .reason__500 {
+  .tblock .reason__me {
     width: auto;
   }
   .reason__block {
@@ -714,7 +710,7 @@ button {
     width: 170px;
     margin-bottom: 0;
   }
-  .reason__500 {
+  .reason__me {
     width: 90%;
   }
   .fblock {
@@ -736,7 +732,7 @@ button {
     margin-bottom: 3px;
     padding: 0 2px 0 0;
   }
-  .sblock .reason__500 {
+  .sblock .reason__me {
     padding-left: 0;
   }
   .tblock {
@@ -749,9 +745,10 @@ button {
     margin-bottom: 2px;
     padding: 0 0 0 4px;
   }
-  .tblock .reason__500 {
+  .tblock .reason__me {
     padding: 2px 0 0;
     width: 90%;
+    display: inline;
   }
   .ya {
     white-space: break-spaces;
@@ -776,6 +773,18 @@ button {
   font: 500 14px/17px montserrat500, Helvetica;
   width: 185px;
   margin: auto;
+  }
+  .question h2 {
+    width: 80%;
+    font: 600 16px/19.5px montserrat600;
+  }
+  .botbar_w {
+    display: inline-block;
+    width: 200px;
+    text-align: center;
+  }
+  .links {
+    width: 260px;
   }
 
 /* ПЕРЕДЕЛАТЬ ПРОПАДАНИЕ БЛОКОВ  */
