@@ -1,9 +1,16 @@
 * {
   box-sizing: border-box;
 }
+body {
+  max-width: 2160px;
+  margin: auto;
+}
 
-.upper,
-.wrapper,
+.menu,
+.page
+.reason,
+.sdiv,
+.question,
 .botbar {
   max-width: 1440px;
   margin: auto;
@@ -39,14 +46,15 @@ button {
 }
 
 /*-------------- header-------------- */
-
-
+.mdiv {
+  border-top: 3px solid #309;
+  border-bottom: 3px solid #309;
+}
 .menu {
   display: flex;
   justify-content: flex-end;
   padding: 30px 130px 27px;
-  border-top: 3px solid #309;
-  border-bottom: 3px solid #309;
+  max-width: 1440px;
 }
 
 .menu__item {
@@ -134,7 +142,9 @@ button {
   background-color: #CFD8DC;
 }
 
-
+.pagediv {
+  background: linear-gradient(#D8B711, #E1BD11);
+}
 .page {
   display: flex;
   justify-content: flex-end;
@@ -164,8 +174,12 @@ button {
 }
 
 /*-------------- section-1-------------- */
+
 .reason {
   padding: 91px 0 90px 0;
+
+}
+.rdiv {
   background-color: #F9F9F9;
 }
 
@@ -243,6 +257,7 @@ button {
 .tblock .reason__me {
   width: 350px;
   padding: 2px 9px 0 0;
+  display: inline-block;
 }
 
 .reason__button {
@@ -312,13 +327,16 @@ button {
 }
 
 /*-------------- section-3-------------- */
+.qdiv {
+  background: rgba(51, 0, 153, 0.12);
+}
 .question {
   display: flex;
   flex-direction: column;
   align-content: center;
   align-items: center;
   padding-top: 60px;
-  background: rgba(51, 0, 153, 0.12);
+  /* background: rgba(51, 0, 153, 0.12); */
 }
 
 .question h1 {
@@ -370,6 +388,9 @@ button {
   color: #fff;
   background-color: #4AB272;
 }
+.fdiv {
+  background-color: #309;
+}
 
 .botbar {
   display: flex;
@@ -414,15 +435,22 @@ button {
 .botbar__cop {
   padding-bottom: 40px;
 }
-}
+
 
 @media (max-width: 1440px) {
   body {
     max-width: none;
     margin: 0;
   }
+  .page {
+    /* background-size: 100%; */
+  }
+  .page__text {
+    margin: 150px 9%;
+  }
 }
 @media (max-width: 1237px) {
+
   .reason__blocks {
     margin-bottom: 70px;
   }
@@ -445,7 +473,7 @@ button {
     font: 800 18px/22px montserrat800, Helvetica;
   }
   .page__text {
-    margin-right: 10%;
+    margin-right: 5%;
     font: 900 32px/39px montserrat900, Helvetica;
   }
   .page__span {
@@ -513,6 +541,7 @@ button {
   body {
     display: block;
   }
+
   .reason {
     padding: 50px 0;
   }
@@ -547,8 +576,11 @@ button {
 }
 
 @media (max-width: 880px){
-  body {
+  /* body {
     margin: 0 1%;
+  } */
+  .page {
+    /* background-position: 13% 0%; */
   }
   .sblock {
     order: 2;
@@ -569,18 +601,21 @@ button {
     width: 100%;
     margin: 0;
   }
-  /* button {
+  button {
     margin-right: calc(5.9% + 2px);
-    width: 70px;
-    height: 19px;
+    width: 56%;
+    height: 66%;
     position: relative;
     top: 0;
     right: 0;
-    font: 800 8px/10px montserrat800, helvetica;
-  } */
-  .menu {
-    padding: 30px 0 27px 0;
+    font: 800 14px/10px montserrat800, helvetica;
+  }
+  .mdiv {
     border: 0;
+  }
+  .menu {
+    padding: 3% 0;
+    padding-bottom: calc(3% - 3px);
   }
   .menu__item {
     display: none;
@@ -595,7 +630,10 @@ button {
     margin-right: calc(9% + 1px);
   }
   .page {
+    background-position: -95px; 0;
     background-position: 13% 0%;
+    /* height: 400px; */
+    background-size: auto;
   }
   .page__text {
     margin-right: 5%;
@@ -621,7 +659,31 @@ button {
     margin-bottom: 6.5%;
   }
 }
-@media (max-width: 700px) {
+@media (max-width: 661px) {
+  .reason h1 {
+    max-width: 70%;
+    margin: 0 auto 30px;
+  }
+  .fblock h1 {
+    width: 305px;
+  }
+
+   .page {
+    background-size: cover;
+  }
+  .page__text {
+    width: 85%;
+    height: auto;
+    margin: 80px 9% 120px;
+    font-size: 25px;
+    line-height: normal;
+  }
+  .page__span {
+    font-size: 16px;
+    width: 85%;
+    max-width: 220px;
+    line-height: normal;
+  }
   .skills {
     display: block;
     padding-top: 36px;
@@ -629,7 +691,7 @@ button {
   }
   .skills div {
     width: 84%;
-    margin-bottom:200px;
+    margin-bottom:220px;
   }
   .right,
   .left2 {
@@ -641,9 +703,10 @@ button {
     background-position: center;
     text-align: center;
   }
-
 }
-@media (max-width: 420px) {
+
+/* @media (max-width: ) */
+@media (max-width: 470px) {
   .menu {
     padding: 16px 0 18px 0;
   }
@@ -670,20 +733,24 @@ button {
     width: 23px;
     height: 23px;
   }
+  .pagediv {
+    background-color: none;
+  }
   .page {
+    background-size: cover;
+    background-position: 13% 0%;
     height: 230px;
-    background-size: 214%;
   }
   .page__text {
+    /* display: block;
+    width: 85%;
+    height: auto; */
     display: block;
-    width: 90%;
-    height: auto;
-    margin: 0;
+    margin: 0 0 0 0;
     padding: 25px 30px 0 0;
     font: 900 20px/24px montserrat900, Helvetica;
   }
   .page__span {
-    width: 75%;
     padding-top: 0;
     font: 700 16px/20px montserrat700, Helvetica;
   }
@@ -719,13 +786,13 @@ button {
     width: 100%;
     height: 200px;
     display: block;
-    background-size: 19%;
+    background-size: 55px;
   }
   .sblock {
     width: 100%;
     margin: 0 0 31px 0;
     padding-top: 58px;
-    background-size: 18%;
+    background-size: 55px;
   }
   .sblock h1 {
     width: 120px;
@@ -739,7 +806,7 @@ button {
     width: 100%;
     margin: auto;
     padding-top: 61px;
-    background-size: 20%;
+    background-size: 55px;
   }
   .tblock h1 {
     margin-bottom: 2px;
@@ -753,12 +820,46 @@ button {
   .ya {
     white-space: break-spaces;
   }
+
   .reason__button {
     width: 260px;
     height: 54px;
     font: 800 16px/20px montserrat800;
     margin-bottom: 45px;
     padding: 2px 0 0 0;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .skills div {
+    margin-bottom: 200px;
   }
   .skills h2 {
     font: 600 16px/20px montserrat500, Helvetica;
