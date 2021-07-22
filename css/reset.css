@@ -44,36 +44,3 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-/* ---------------------------------------------
-/* пользовательские настройки */
-* header * {
-  border: dashed 1px red;
-}
-
-body {
-  margin: auto;
-  width: 82%;
-  font-family: "montserrat500";
-}
-
-header {
-  margin: 50px;
-  /* font-family: gilroy; */
-}
-
-nav {
-  float: right;
-  clear: both;
-}
-
-.menu {
-  font-family: gilroy;
-}
-
-.menu__item {
-  padding: 0 42px;
-}
-
-.botbar p {
-  font-family: Roboto;
-}
