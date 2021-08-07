@@ -102,7 +102,7 @@ button {
   display: block;
   width: 100%;
   height: 3px;
-  background-color: #0056EC;
+  background-color: #330099;
   transition-duration: .25s;
 }
 .hmenu__btn > span::before {
@@ -171,6 +171,9 @@ button {
   padding-top: 8px;
   font: 700 30px/37px montserrat700, Helvetica;
   color: #fff;
+}
+.upper {
+  border-bottom: 2px white solid;
 }
 
 /*-------------- section-1-------------- */
@@ -307,6 +310,7 @@ button {
 }
 
 .left1 p {
+  width: 450px;
   padding: 2px 1px 0px 0px;
 }
 
@@ -591,7 +595,7 @@ button {
   }
 }
 @media (min-width: 807px) {
-  .hmenu {
+  .hmenu, {
     display: none;
   }
 }
@@ -659,6 +663,11 @@ button {
     margin-bottom: 6.5%;
   }
 }
+@media (min-width: 662px) {
+  .circle {
+    display: none;
+  }
+}
 @media (max-width: 661px) {
   .reason h1 {
     max-width: 70%;
@@ -667,7 +676,6 @@ button {
   .fblock h1 {
     width: 305px;
   }
-
    .page {
     background-size: cover;
   }
@@ -697,11 +705,21 @@ button {
   .left2 {
     display: none;
   }
+  .circle {
+    display:
+
+  }
   .left1 {
     margin: auto;
     padding: 185px 0 0 0;
     background-position: center;
     text-align: center;
+  }
+  .left1 p {
+    width: auto;
+}
+  .skills__me {
+    /* display: inline-block; */
   }
 }
 
@@ -755,10 +773,10 @@ button {
     font: 700 16px/20px montserrat700, Helvetica;
   }
   .reason {
-    padding: 48px 0 0 0;
+    padding: 46px 0 0 0;
   }
   .reason__blocks {
-    margin-bottom: 13px;
+    margin-bottom: 34px;
   }
   h1 {
     display: block;
@@ -790,7 +808,7 @@ button {
   }
   .sblock {
     width: 100%;
-    margin: 0 0 31px 0;
+    margin: 0 0 12px 0;
     padding-top: 58px;
     background-size: 55px;
   }
@@ -829,37 +847,13 @@ button {
     padding: 2px 0 0 0;
   }
 
+  .left1 {
+    background-position: top;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  }
 
   .skills div {
-    margin-bottom: 200px;
+    margin-bottom: 234px;
   }
   .skills h2 {
     font: 600 16px/20px montserrat500, Helvetica;
@@ -875,51 +869,67 @@ button {
   width: 185px;
   margin: auto;
   }
+  .question {
+    padding-top: 34px;
+  }
+  .question h1 {
+    padding: 0;
+    margin-bottom: 0;
+    height: 39px;
+  }
   .question h2 {
     width: 80%;
+    margin-bottom: 20px;
+    padding-top: 205px;
     font: 600 16px/19.5px montserrat600;
+    background-position: center top;
+    background-size: 175px;
   }
-  .botbar_w {
+  .form {
+    margin-bottom: 30px;
+    padding-left: 1px;
+  }
+  .formline {
+    width: 260px;
+    height: 50px;
+    margin-bottom: 10px;
+    padding: 1px 0 0 25px;
+    font: 600 10px/12px montserrat600;
+  }
+  .formline:nth-child(3n) {
+    margin-bottom: 29px;
+  }
+
+  .button2 {
+    height: 52px;
+    padding: 2px 0 0 4px;
+    font: 900 16px/20px montserrat900, Helvetica;
+  }
+  .botbar {
+    padding-top: 32px;
+  }
+  .botbar p {
     display: inline-block;
     width: 200px;
+    margin-bottom: 14px;
     text-align: center;
+    font: 500 14px/16px Roboto, Helvetica;
   }
   .links {
     width: 260px;
+    margin-bottom: 48px;
+  }
+  .links a {
+    width: 35px;
+    height: 35px;
+    background-repeat: no-repeat;
+    background-size: 35px;
+  }
+  .botbar__cop {
+    padding-bottom: 17px;
   }
 
-/* ПЕРЕДЕЛАТЬ ПРОПАДАНИЕ БЛОКОВ  */
-  /* .skills {
-    display: block;
-    padding-top: 36px;
-    margin-bottom: 100px;
-  }
-  .skills div {
-    width: 84%;
-    margin-bottom:200px;
-  }
-  .right,
-  .left2 {
-    display: none;
-  }
-  .left1 {
-    margin: auto;
-    padding: 185px 0 0 0;
-    background: none;
-    text-align: center;
-  }
-  .question {
-
-  }
-  .question h2 {
-    display: block;
-    width: 76%;
-    font: 600 16px/20px montserrat600, Helvetica;
-  }
-
-  .links {
-    width: 81%;
-  } */
-
-
+}
+.circle {
+  list-style-type: none;
 }
