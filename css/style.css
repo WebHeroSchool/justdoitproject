@@ -326,7 +326,6 @@ button {
   padding: 11px 0 0 200px;
   background: url(../img/react.svg) no-repeat;
 }
-
 /*-------------- section-3-------------- */
 .qdiv {
   background: rgba(51, 0, 153, 0.12);
@@ -564,7 +563,6 @@ button {
   .tblock {
     order: 3;
   }
-
   .reason__me {
     width: 100%;
     height: auto;
@@ -583,9 +581,6 @@ button {
 }
 
 @media (max-width: 880px){
-  /* body {
-    margin: 0 1%;
-  } */
   .page {
     /* background-position: 13% 0%; */
   }
@@ -598,7 +593,8 @@ button {
   }
 }
 @media (min-width: 807px) {
-  .hmenu {
+  .hmenu,
+  .dotblock {
     display: none;
   }
 }
@@ -660,7 +656,6 @@ button {
   .skills {
     display: block;
     padding-top: 36px;
-    margin-bottom: 50px;
   }
   .skills div {
     width: 500px;
@@ -678,7 +673,27 @@ button {
   }
   .left1 p {
     width: auto;
-}
+ }
+ .dotblock {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-around;
+   width: 75px;
+   margin: 0 auto 35px;
+   list-style: none;
+ }
+ .dot {
+   width: 15px;
+   height: 15px;
+   border-radius: 50%;
+   background: #FFDA45;
+   outline: none;
+   border-style: none;
+ }
+ .white {
+   border: 1px solid #E1E6E9;
+   background-color: white;
+ }
 }
 @media (max-width: 661px) {
   .reason h1 {
@@ -869,7 +884,7 @@ button {
 
 
   .skills div {
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     width: 80%;
 
   }
