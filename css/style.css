@@ -677,7 +677,7 @@ button {
  .dotblock {
    display: flex;
    flex-direction: row;
-   justify-content: space-around;
+   justify-content: space-between;
    width: 75px;
    margin: 0 auto 35px;
    list-style: none;
