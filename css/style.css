@@ -307,6 +307,7 @@ button {
 }
 
 .left1 p {
+  width: 450px;
   padding: 2px 1px 0px 0px;
 }
 
@@ -325,7 +326,6 @@ button {
   padding: 11px 0 0 200px;
   background: url(../img/react.svg) no-repeat;
 }
-
 /*-------------- section-3-------------- */
 .qdiv {
   background: rgba(51, 0, 153, 0.12);
@@ -557,9 +557,14 @@ button {
     margin-bottom: 0;
     flex: 1 1 300px;
   }
-
+  .sblock {
+    order: 2;
+  }
+  .tblock {
+    order: 3;
+  }
   .reason__me {
-    width: 70%;
+    width: 100%;
     height: auto;
     display: inline-block;
   }
@@ -576,9 +581,6 @@ button {
 }
 
 @media (max-width: 880px){
-  /* body {
-    margin: 0 1%;
-  } */
   .page {
     /* background-position: 13% 0%; */
   }
@@ -591,7 +593,8 @@ button {
   }
 }
 @media (min-width: 807px) {
-  .hmenu {
+  .hmenu,
+  .dotblock {
     display: none;
   }
 }
@@ -632,7 +635,6 @@ button {
   .page {
     background-position: -95px; 0;
     background-position: 13% 0%;
-    /* height: 400px; */
     background-size: auto;
   }
   .page__text {
@@ -653,11 +655,45 @@ button {
   }
   .skills {
     display: block;
+    padding-top: 36px;
   }
   .skills div {
-    width: 90%;
-    margin-bottom: 6.5%;
+    width: 500px;
+    height: auto;
+    margin-bottom: 0;
   }
+  .right, .left2 {
+    display: none;
+  }
+  .left1 {
+    margin: auto;
+    padding: 185px 0 0 0;
+    background-position: center top;
+    text-align: center;
+  }
+  .left1 p {
+    width: auto;
+ }
+ .dotblock {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   width: 75px;
+   margin: 0 auto 35px;
+   list-style: none;
+ }
+ .dot {
+   width: 15px;
+   height: 15px;
+   border-radius: 50%;
+   background: #FFDA45;
+   outline: none;
+   border-style: none;
+ }
+ .white {
+   border: 1px solid #E1E6E9;
+   background-color: white;
+ }
 }
 @media (max-width: 661px) {
   .reason h1 {
@@ -684,28 +720,10 @@ button {
     max-width: 220px;
     line-height: normal;
   }
-  .skills {
-    display: block;
-    padding-top: 36px;
-    margin-bottom: 100px;
-  }
   .skills div {
-    width: 84%;
-    margin-bottom:220px;
+    width: 95%;
   }
-  .right,
-  .left2 {
-    display: none;
-  }
-  .left1 {
-    margin: auto;
-    padding: 185px 0 0 0;
-    background-position: center;
-    text-align: center;
-  }
-}
 
-/* @media (max-width: ) */
 @media (max-width: 470px) {
   .menu {
     padding: 16px 0 18px 0;
@@ -758,7 +776,9 @@ button {
     padding: 48px 0 0 0;
   }
   .reason__blocks {
-    margin-bottom: 13px;
+    width: 300px;
+    margin: auto;
+    margin-bottom: 34px;
   }
   h1 {
     display: block;
@@ -790,7 +810,7 @@ button {
   }
   .sblock {
     width: 100%;
-    margin: 0 0 31px 0;
+    margin: 0 0 12px 0;
     padding-top: 58px;
     background-size: 55px;
   }
@@ -829,6 +849,11 @@ button {
     padding: 2px 0 0 0;
   }
 
+  .left1 {
+    background-position: top;
+
+  }
+
 
 
 
@@ -859,7 +884,9 @@ button {
 
 
   .skills div {
-    margin-bottom: 200px;
+    margin-bottom: 30px;
+    width: 80%;
+
   }
   .skills h2 {
     font: 600 16px/20px montserrat500, Helvetica;
@@ -875,51 +902,63 @@ button {
   width: 185px;
   margin: auto;
   }
+  .question {
+    padding-top: 34px;
+  }
+  .question h1 {
+    padding: 0;
+    margin-bottom: 0;
+    height: 39px;
+  }
   .question h2 {
     width: 80%;
+    margin-bottom: 20px;
+    padding-top: 205px;
     font: 600 16px/19.5px montserrat600;
+    background-position: center top;
+    background-size: 175px;
   }
-  .botbar_w {
+  .form {
+    margin-bottom: 30px;
+    padding-left: 1px;
+  }
+  .formline {
+    width: 260px;
+    height: 50px;
+    margin-bottom: 10px;
+    padding: 1px 0 0 25px;
+    font: 600 10px/12px montserrat600;
+  }
+  .formline:nth-child(3n) {
+    margin-bottom: 29px;
+  }
+
+  .button2 {
+    height: 52px;
+    padding: 2px 0 0 4px;
+    font: 900 16px/20px montserrat900, Helvetica;
+  }
+  .botbar {
+    padding-top: 32px;
+  }
+  .botbar p {
     display: inline-block;
     width: 200px;
+    margin-bottom: 14px;
     text-align: center;
+    font: 500 14px/16px Roboto, Helvetica;
   }
   .links {
     width: 260px;
   }
-
-/* ПЕРЕДЕЛАТЬ ПРОПАДАНИЕ БЛОКОВ  */
-  /* .skills {
-    display: block;
-    padding-top: 36px;
-    margin-bottom: 100px;
+  .links a {
+    width: 35px;
+    height: 35px;
+    background-repeat: no-repeat;
+    background-size: 35px;
   }
-  .skills div {
-    width: 84%;
-    margin-bottom:200px;
+  .botbar__cop {
+    padding-bottom: 15px;
   }
-  .right,
-  .left2 {
-    display: none;
-  }
-  .left1 {
-    margin: auto;
-    padding: 185px 0 0 0;
-    background: none;
-    text-align: center;
-  }
-  .question {
-
-  }
-  .question h2 {
-    display: block;
-    width: 76%;
-    font: 600 16px/20px montserrat600, Helvetica;
-  }
-
-  .links {
-    width: 81%;
-  } */
-
 
 }
