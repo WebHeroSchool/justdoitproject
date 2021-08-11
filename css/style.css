@@ -1,6 +1,47 @@
 * {
   box-sizing: border-box;
 }
+@keyframes bounce {
+  0%, 20%, 60%, 100% {
+		transform: translateY(0);
+		transform: translateY(0);
+	}
+
+	40% {
+		transform: translateY(-10px);
+		transform: translateY(-10px);
+	}
+
+	80% {
+		transform: translateY(-5px);
+		transform: translateY(-5px);
+	}
+}
+@keyframes color {
+  0% {
+    color: #585858;
+  }
+
+  50% {
+    color: #50f;
+  }
+  60% {
+    color: #309;
+  }
+  70% {
+    color: #50f;
+  }
+  80% {
+    color: #309;
+  }
+  90% {
+    color: #50f;
+  }
+  100% {
+    color: #309;
+  }
+
+}
 body {
   max-width: 2160px;
   margin: auto;
@@ -43,7 +84,18 @@ button {
   background-color: #309;
   border: 0px;
   border-radius: 50px;
+  cursor: pointer;
+  transition: all 500ms ease;
+  -webkit-transition: all 400ms ease-in-out;
 }
+
+button:hover {
+  border-color: none;
+  color: #309;
+  background-color: white;
+  box-shadow: 0 0 7px 0 #309 inset, 0 0 7px 4px #309;
+}
+
 
 /*-------------- header-------------- */
 .mdiv {
@@ -58,9 +110,14 @@ button {
 }
 
 .menu__item {
+  position: relative;
   padding: 13px 43px 0 0;
   font: 800 20px/26px gilroy;
   color: #585858;
+}
+.menu__item:hover {
+  animation: color 3s ease forwards;
+  /* animation: bounce 5s ease; */
 }
 
 .hmenu {
@@ -388,7 +445,19 @@ button {
   font: 900 20px/24px montserrat900, Helvetica;
   color: #fff;
   background-color: #4AB272;
+  cursor: pointer;
+  transition: all 500ms ease;
+  -webkit-transition: all 400ms ease-in-out;
 }
+
+.button2:hover {
+  border-color: none;
+  color: #4AB272;
+  border: 1px solid rgba(74, 178, 114, 0.7);
+  background-color: white;
+  box-shadow: 0 0 7px 0 #4AB272 inset, 0 0 7px 4px #4AB272;
+}
+
 .fdiv {
   background-color: #309;
 }
@@ -419,6 +488,9 @@ button {
 .links a {
   width: 60px;
   height: 60px;
+}
+.links a:hover {
+  animation: bounce 1s;
 }
 
 .links__l {
