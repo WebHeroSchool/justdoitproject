@@ -102,11 +102,11 @@ button {
   display: block;
   width: 100%;
   height: 3px;
-  background-color: #0056EC;
+  background: #309;
   transition-duration: .25s;
 }
 .hmenu__btn > span::before {
-  top: -7px;
+  top: -8px;
   content: '';
 }
 .hmenu__btn > span::after {
@@ -127,7 +127,6 @@ button {
   background-color: #ECEFF1;
   box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
   list-style: none;
-  /* visibility: hidden; */
   opacity: 0;
 }
 .hmenu__item {
@@ -370,6 +369,8 @@ button {
   margin-bottom: 20px;
   padding: 3px 0 0 40px;
   font: 600 15px/18px montserrat600, Helvetica;
+  color: #FBFBFB;
+  background-color: #FBFBFB;
   border: 1px solid #E9E9E9;
   border-radius: 40px;
 }
@@ -679,7 +680,7 @@ button {
    flex-direction: row;
    justify-content: space-between;
    width: 75px;
-   margin: 0 auto 35px;
+   margin: 0 auto 34px;
    list-style: none;
  }
  .dot {
@@ -691,6 +692,9 @@ button {
    border-style: none;
  }
  .white {
+   position: relative;
+  top: 0px;
+  left: 2px;
    border: 1px solid #E1E6E9;
    background-color: white;
  }
@@ -726,7 +730,7 @@ button {
 
 @media (max-width: 470px) {
   .menu {
-    padding: 16px 0 18px 0;
+    padding: 14px 0 20px;
   }
   .smallmenu {
     display: inline-block;
@@ -741,23 +745,24 @@ button {
   }
   .call {
     width: 70px;
-    height: 19.5px;
+    height: 20px;
     margin-right: 19px;
+    padding-bottom: 2px;
     font: 800 8px/9.75px montserrat800, Helvetica;
   }
   .hmenu__btn {
-    top: -22px;
+    top: -23px;
     right: 0;
     width: 23px;
-    height: 23px;
+    height: 30px;
   }
   .pagediv {
     background-color: none;
   }
   .page {
     background-size: cover;
-    background-position: 13% 0%;
-    height: 230px;
+    background-position: calc(13% + 1px) 1px;
+    height: 231px;
   }
   .page__text {
     /* display: block;
@@ -773,7 +778,10 @@ button {
     font: 700 16px/20px montserrat700, Helvetica;
   }
   .reason {
-    padding: 48px 0 0 0;
+    padding: 45px 0 0 0;
+    border: 1px solid white;
+    border-top: 2px solid white;
+    border-bottom: none;
   }
   .reason__blocks {
     width: 300px;
@@ -792,32 +800,37 @@ button {
   }
   .reason h1 {
     margin-bottom: 40px;
+    padding: 0;
   }
   .reason__block h1 {
     width: 170px;
     margin-bottom: 0;
+    padding-right: 1px;
   }
   .reason__me {
     width: 90%;
   }
   .fblock {
     padding-top: 53px;
-    margin: 0 0 32px;
+    margin: 0 0 31px;
     width: 100%;
     height: 200px;
     display: block;
     background-size: 55px;
   }
+  .fblock .reason__me {
+    padding: 3px 5px 0 0;
+  }
   .sblock {
     width: 100%;
-    margin: 0 0 12px 0;
+    margin: 0 0 14px 0;
     padding-top: 58px;
     background-size: 55px;
   }
   .sblock h1 {
     width: 120px;
     margin-bottom: 3px;
-    padding: 0 2px 0 0;
+    padding: 0 3px 0 0;
   }
   .sblock .reason__me {
     padding-left: 0;
@@ -825,7 +838,7 @@ button {
   .tblock {
     width: 100%;
     margin: auto;
-    padding-top: 61px;
+    padding-top: 60px;
     background-size: 55px;
   }
   .tblock h1 {
@@ -838,14 +851,15 @@ button {
     display: inline;
   }
   .ya {
+    padding-right: 11px;
     white-space: break-spaces;
   }
 
   .reason__button {
     width: 260px;
-    height: 54px;
+    height: 55px;
     font: 800 16px/20px montserrat800;
-    margin-bottom: 45px;
+    margin-bottom: 44px;
     padding: 2px 0 0 0;
   }
 
@@ -853,35 +867,6 @@ button {
     background-position: top;
 
   }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
   .skills div {
     margin-bottom: 30px;
@@ -901,32 +886,34 @@ button {
   font: 500 14px/17px montserrat500, Helvetica;
   width: 185px;
   margin: auto;
+  padding: 1px 4px 0px 0px;
   }
+
   .question {
-    padding-top: 34px;
+    padding-top: 33px;
   }
   .question h1 {
-    padding: 0;
+    padding: 0 0 0 2px;
     margin-bottom: 0;
     height: 39px;
   }
   .question h2 {
     width: 80%;
     margin-bottom: 20px;
-    padding-top: 205px;
+    padding: 204px 0 0 0;
     font: 600 16px/19.5px montserrat600;
-    background-position: center top;
+    background-position: calc(50% + 2px) top;
     background-size: 175px;
   }
   .form {
     margin-bottom: 30px;
-    padding-left: 1px;
+    padding-left: 4px;
   }
   .formline {
     width: 260px;
     height: 50px;
     margin-bottom: 10px;
-    padding: 1px 0 0 25px;
+    padding: 1px 0 0 24px;
     font: 600 10px/12px montserrat600;
   }
   .formline:nth-child(3n) {
@@ -934,8 +921,9 @@ button {
   }
 
   .button2 {
+    width: 262px;
     height: 52px;
-    padding: 2px 0 0 4px;
+    padding: 1px 0 0;
     font: 900 16px/20px montserrat900, Helvetica;
   }
   .botbar {
@@ -943,13 +931,16 @@ button {
   }
   .botbar p {
     display: inline-block;
-    width: 200px;
+    width: 179px;
     margin-bottom: 14px;
+    padding: 0;
     text-align: center;
+    white-space: pre-line;
     font: 500 14px/16px Roboto, Helvetica;
   }
   .links {
     width: 260px;
+    margin-bottom: 48px;
   }
   .links a {
     width: 35px;
@@ -958,7 +949,7 @@ button {
     background-size: 35px;
   }
   .botbar__cop {
-    padding-bottom: 15px;
+    padding-bottom: 17px;
   }
 
 }
