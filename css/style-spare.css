@@ -1110,7 +1110,7 @@ button:hover {
     background-size: 35px;
   }
 
-  .botbar__cop {
-    padding-bottom: 17px;
+  .botbar .botbar__cop {
+    padding-bottom: 35px;
   }
 }
